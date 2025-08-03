@@ -1,0 +1,26 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortener with separate server and client services",
+  "scripts": {
+    "check": "node check-prerequisites.js",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "test:e2e": "node test-setup.js",
+    "test:server": "cd server && npm test",
+    "test:client": "cd client && npm test -- --watchAll=false",
+    "test:all": "npm run test:server && npm run test:client",
+    "build": "cd client && npm run build",
+    "start:prod": "cd server && npm start",
+    "lint:server": "cd server && npx eslint .",
+    "lint:client": "cd client && npx eslint src/",
+    "lint:all": "npm run lint:server && npm run lint:client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "axios": "^1.6.2"
+  },
+  "keywords": ["url-shortener", "nodejs", "react", "postgresql", "prisma"],
+  "author": "",
+  "license": "MIT"
+}
