@@ -50,4 +50,4 @@ Thumbs.db
 *.sqlite
 
 # Prisma
-server/prisma/migrations/
+#server/prisma/migrations/
