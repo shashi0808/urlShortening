@@ -13,7 +13,7 @@ npm-debug.log*
 *.sqlite
 
 # Prisma
-prisma/migrations/
+#prisma/migrations/
 
 # IDE files
 .vscode/
